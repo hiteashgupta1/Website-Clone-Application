@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.bd2 {
+  margin-top: 10px;
+  margin-left:120px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 1em;
+  font-size: x-large;
+}
+
+.nav-link {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.container2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.social-buttons button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.social-buttons button:hover {
+  background-color: #f2f2f2;
+}
+
+.or {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="./clone.html" class="nav-link">Uber</a>
+  <a href="./clone.html" class="nav-link">Ride</a>
+  <a href="./clone.html" class="nav-link">Drive</a>
+  <a href="./clone.html" class="nav-link">More</a>
+</div>
+<div class="bd2">
+  
+<div class="container2">
+  <h1>Sign up</h1>
+
+  <form>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <input type="password" id="password" placeholder="Enter your password" required>
+
+    <button type="submit">SignUp</button>
+  </form>
+
+  <div class="or">or</div>
+
+  <div class="social-buttons">
+    <button type="button" onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdF4I77uN3AT7gu_AqUM5IkgqZfFlXB9U4k5Xl7u2nyH-MKHQaJ8h-oDbzDxHaROHOi7DsFVwYRF&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1843255722%3A1721991992259102&ddm=0'">
+      <img src="./images/googleColoredIcon.png" alt="Google" height="20px" style="margin-right: 10px;"> Continue with Google
+    </button>
+    <button type="button" onclick="window.location.href='https://appleid.apple.com/sign-in'">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png" alt="Apple" height="20px" style="margin-right: 10px;"> Continue with Apple
+    </button>
+    <button type="button" onclick="window.location.href='https://www.facebook.com/login/'">
+      <img src="./images/facebookColoredIcon.png" alt="Facebook" height="20px" style="margin-right: 10px;"> Continue with Facebook
+    </button>
+  </div>
+
+  <div class="or">or</div>
+
+  <button type="button" onclick="window.location.href='https://www.google.com/search?q=QR+code+scanner'">
+    <img src="./images/qrColoredIcon.png" alt="QR code" height="20px" style="margin-right: 10px;"> Log in with QR code
+  </button>
+
+  <div class="footer">
+    By proceeding, you consent to get calls, WhatsApp or SMS messages, including by automated means, from Uber and its affiliates to the number provided. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+  </div>
+
+</div>
+
+</div>
+</body>
+</html>

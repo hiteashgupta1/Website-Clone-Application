@@ -1,0 +1,241 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #0a0909;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #111010;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-size: x-large;
+}
+
+header nav ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: auto;
+}
+header nav ul li a button{
+    font-size: large;
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 40px;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-top: 10px;
+
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a {
+    font-size: 1.4rem;
+}
+
+.hero {
+    background-image: url('./images/RiderHome.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0e7ceb;
+}
+#btn{
+    font-size: medium;
+    padding: 6px;
+    background-color: rgb(232, 236, 246);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 25px;
+
+}
+
+.firstff{
+    margin-bottom: 3rem;
+    max-width: 1500px;
+    width: 55rem;
+    margin-right: 1.5rem;
+}
+
+.scep p{
+    font-size: 19px;
+    margin-top: 1.5rem;
+}
+.features h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.features h4{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.features img{
+    max-width: 100%;
+}
+  .scep {
+    margin-left: 1rem;
+  }
+
+.features a{
+    font-size: 1.1rem;
+    text-decoration-color: burlywood;
+    color: darkgrey;
+    padding-right: 1rem;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 1500px;
+    width: 75rem;
+    padding: 2em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    display: block;
+}
+.vehical-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.vehical-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 2.5rem;
+}
+.vehical-section-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11%;
+    margin-bottom: 6rem;
+}
+.vehical-img img {
+    max-width: 100%;
+}
+.vehical-marker h1 {
+    display: inline;
+    cursor: pointer;
+    padding-right: 5rem;
+}
+.vehical-marker h1:hover {
+    transform: translateX(15px);
+    transition: 1s;
+}
+
+.testimonials {
+    padding: 2em;
+    font-size: large;
+}
+
+.testimonials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials li {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+footer  {
+    background-color: #0b0a0a;
+    color: #fff;
+    font-family: sans-serif;
+}
+#ft-sec{
+    margin-left: 100px;
+    padding-top: 50px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+footer p {
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-right: 0;
+    }
+    .hero {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .features {
+        padding: 1em;
+    }
+    .testimonials {
+        padding: 1em;
+    }
+}
